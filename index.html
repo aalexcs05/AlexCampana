@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Campaña | Portafolio Profesional</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --text-color: #e2e8f0;
+            --accent-color: #38bdf8;
+            --card-bg: #1e293b;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 4rem 2rem 2rem 2rem;
+            text-align: center;
+        }
+        h1 { font-size: 2.5rem; margin-bottom: 0.5rem; color: #fff; }
+        .subtitle { font-size: 1.2rem; color: var(--accent-color); margin-bottom: 2rem; }
+        main { max-width: 900px; margin: 0 auto; padding: 2rem; }
+        section { margin-bottom: 4rem; }
+        h2 { border-bottom: 2px solid var(--card-bg); padding-bottom: 0.5rem; color: #fff; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
+        .card { background-color: var(--card-bg); padding: 1.5rem; border-radius: 8px; border: 1px solid #334155; }
+        .project-card { border-left: 4px solid var(--accent-color); }
+        .tag { background: #334155; padding: 0.2rem 0.6rem; border-radius: 4px; font-size: 0.85rem; margin-right: 0.5rem; display: inline-block; margin-top: 0.5rem;}
+        a { color: var(--accent-color); text-decoration: none; font-weight: bold; }
+        a:hover { text-decoration: underline; }
+        .btn { display: inline-block; background: var(--accent-color); color: var(--bg-color); padding: 0.6rem 1.2rem; border-radius: 4px; margin-top: 1rem; }
+        footer { text-align: center; padding: 3rem; color: #64748b; font-size: 0.9rem; border-top: 1px solid var(--card-bg); }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Alex Campaña Salvador</h1>
+        <p class="subtitle">Graduado en ASIX & Especialista en Ciberseguridad, Redes y Automatización</p>
+        <p>Apasionado por el diseño de infraestructuras seguras, contenedorización y el despliegue de soluciones inteligentes. En septiembre comenzaré el Grado Universitario en Inteligencia Artificial.</p>
+        <p>
+            <a href="https://www.linkedin.com/in/alex-camp%C3%B1a" target="_blank">LinkedIn</a> | 
+            <a href="mailto:aalexcs.05@gmail.com">Contacto por Email</a>
+        </p>
+    </header>
+
+    <main>
+        <section id="sobre-mi">
+            <h2>🚀 Sobre mí</h2>
+            <ul>
+                <li><strong>Educación:</strong> Técnico Superior en Administración de Sistemas Informáticos en Red (ASIX) por Vedruna Vall[cite: 27, 28].</li>
+                <li><strong>Core técnico:</strong> Hardening de servidores Linux, administración de redes Cisco, entornos Docker y flujos de automatización con n8n.</li>
+                <li><strong>Experiencia:</strong> Soporte técnico informático L1/L2, despliegue de infraestructura de red e instrucción en programación y robótica (STEAM)[cite: 13, 14, 17].</li>
+            </ul>
+        </section>
+
+        <section id="proyectos">
+            <h2>📂 Proyecto Principal</h2>
+            <div class="card project-card">
+                <h3>🛡️ AIIOC - API Platform para Ciberseguridad</h3>
+                <p>Plataforma API centralizada para la gestión, almacenamiento y análisis de indicadores de compromiso (IoC) técnicos.</p>
+                <div>
+                    <span class="tag">Node.js</span>
+                    <span class="tag">Express</span>
+                    <span class="tag">MongoDB</span>
+                    <span class="tag">Docker</span>
+                </div>
+                <p style="margin-top: 15px; font-size: 0.95rem; color: #94a3b8;">Esta misma página web está alojada dentro del repositorio del proyecto. Puedes explorar los archivos de configuración, el Dockerfile y el código fuente subiendo en el navegador o haciendo clic en el botón de abajo.</p>
+                <a class="btn" href="https://github.com/aalexcs05/aiioc-api" target="_blank">Explorar Código del Repositorio</a>
+            </div>
+        </section>
+
+        <section id="tecnologias">
+            <h2>🛠️ Habilidades Técnicas</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Sistemas y Redes</h3>
+                    <p>Linux (Ubuntu, Debian, Kali), Cisco Systems, Docker & Docker Compose, entornos de virtualización[cite: 14].</p>
+                </div>
+                <div class="card">
+                    <h3>Programación</h3>
+                    <p>Python, Node.js, Bash Scripting, Arduino[cite: 17, 23].</p>
+                </div>
+                <div class="card">
+                    <h3>Herramientas</h3>
+                    <p>MongoDB, Git/GitHub, n8n Automation platform.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Alex Campaña Salvador. Desarrollado con GitHub Pages.</p>
+    </footer>
+
+</body>
+</html>
