@@ -1,11 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
     
-    // Base de datos del portafolio
     const infoData = {
         about: {
             title: "Sobre Mí",
             icon: "👤",
-            details: "Graduado en Administración de Sistemas Informáticos en Red (ASIX)[cite: 4, 27]. Especializado en el diseño de infraestructuras seguras, hardening de servidores basados en Linux, configuración de redes y automatización de procesos mediante contenedores[cite: 4, 14]."
+            details: "Graduado en Administración de Sistemas Informáticos en Red (ASIX)[cite: 4, 27]. Especializado en el diseño de infraestructuras seguras [cite: 4], hardening de servidores basados en Linux, configuración de redes [cite: 4, 14] y automatización de procesos mediante contenedores[cite: 4, 14]."
         },
         experience: {
             title: "Experiencia Laboral",
@@ -31,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "Proyectos",
             icon: "🛡️",
             isProject: true,
-            projectName: "Proyecto AIIOC — Final de Grado",
+            projectName: "Proyecto AIIOC — Final de Grado [cite: 23]",
             details: "API Platform centralizada para la gestión, almacenamiento y análisis técnico de indicadores de compromiso (IoC) y logs de ciberseguridad[cite: 23]. Desarrollado con un enfoque moderno de cara a la automatización de la seguridad.",
             tags: ["Node.js", "MongoDB", "Docker", "Git Workflow"],
             link: "https://github.com/aalexcs05/aiioc-api"
@@ -63,9 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         let html = `<h2>${data.icon} ${data.title}</h2>`;
 
-        if (data.details) {
-            html += `<p>${data.details}</p>`;
-        }
+        if (data.details) { html += `<p>${data.details}</p>`; }
 
         if (data.list) {
             html += `<ul>`;
