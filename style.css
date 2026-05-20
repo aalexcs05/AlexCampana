@@ -1,5 +1,5 @@
 :root {
-    --bg-color: #0b0f19; /* Fondo oscuro premium */
+    --bg-color: #171717; /* Tu color de fondo exacto */
     --text-main: #f1f5f9;
     --text-muted: #94a3b8;
     --card-bg: #1e293b;
@@ -25,27 +25,30 @@ body {
     position: relative;
 }
 
-/* --- EFECTO DE LÍNEAS DE FONDO (INTEGRADO) --- */
+/* --- LÍNEAS VERTICALES ANIMADAS (FONDO) --- */
 .lines {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
+    bottom: 0;
     height: 100%;
     margin: auto;
     width: 90vw;
-    z-index: 1; /* Al fondo */
-    pointer-events: none; /* Evita que interfiera con los clics */
+    z-index: 1; /* Capa inferior trasera */
+    pointer-events: none; /* No bloquea la interacción del ratón */
 }
+
 .lines .line {
     position: absolute;
     width: 1px;
     height: 100%;
     top: 0;
     left: 50%;
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.08);
     overflow: hidden;
 }
+
 .lines .line::after {
     content: "";
     display: block;
@@ -60,6 +63,7 @@ body {
     animation-fill-mode: forwards;
     animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
 }
+
 .lines .line:nth-child(1) { margin-left: -35%; }
 .lines .line:nth-child(1)::after { animation-delay: 2s; }
 .lines .line:nth-child(3) { margin-left: 35%; }
@@ -70,16 +74,16 @@ body {
     100% { top: 110%; }
 }
 
-/* --- ENVOLTORIO PRINCIPAL (POR ENCIMA DEL FONDO) --- */
+/* --- CONTENEDOR PRINCIPAL (FRONTAL) --- */
 .wrapper {
     width: 100%;
     max-width: 1000px;
     padding: 2rem;
-    z-index: 10; /* Por encima de las líneas para poder clicar */
+    z-index: 10; /* Por encima de las líneas de fondo */
     position: relative;
 }
 
-/* --- Control de Pantallas (Fade) --- */
+/* --- Gestión de Transiciones de Pantalla --- */
 .interface-container, .details-container {
     display: none;
     opacity: 0;
@@ -91,7 +95,7 @@ body {
     opacity: 1;
 }
 
-/* --- Grid de las 4 Esferas --- */
+/* --- Rejilla del Menú de Esferas --- */
 .spheres-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -104,7 +108,7 @@ body {
     .spheres-grid { grid-template-columns: repeat(4, 1fr); }
 }
 
-/* --- Tarjeta e Iluminación de Esferas --- */
+/* --- Modelado 3D de las Esferas --- */
 .sphere-card {
     background: transparent;
     border: none;
@@ -143,7 +147,7 @@ body {
     text-shadow: 0 0 10px var(--accent);
 }
 
-/* --- Contenedor de Información Detallada --- */
+/* --- Panel de Visualización de Información --- */
 .details-container {
     background-color: var(--card-bg);
     border: 1px solid var(--border-color);
@@ -173,8 +177,9 @@ body {
     border-color: var(--text-main);
 }
 
-/* --- Contenido Interno --- */
+/* --- Estilos del Contenido de Texto --- */
 .content-detail { animation: fadeIn 0.5s ease forwards; }
+
 .content-detail h2 {
     font-size: 2.2rem;
     margin-bottom: 1.5rem;
@@ -182,6 +187,7 @@ body {
     border-bottom: 2px solid var(--border-color);
     padding-bottom: 0.5rem;
 }
+
 .content-detail p { font-size: 1.1rem; color: var(--text-muted); line-height: 1.8; }
 .content-detail ul { list-style: none; margin-top: 1rem; }
 .content-detail li { 
@@ -191,6 +197,7 @@ body {
     color: var(--text-muted);
     font-size: 1.05rem;
 }
+
 .content-detail li::before { content: "→"; position: absolute; left: 0; color: #38bdf8; font-weight: bold; }
 .content-detail strong { color: var(--text-main); }
 
@@ -201,8 +208,10 @@ body {
     border: 1px solid var(--border-color);
     margin-top: 1.5rem;
 }
+
 .project-box h4 { font-size: 1.3rem; margin-bottom: 0.5rem; color: #fff; }
 .tech-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem; }
+
 .tag {
     background-color: rgba(255, 255, 255, 0.05);
     color: var(--text-muted);
@@ -211,6 +220,7 @@ body {
     font-size: 0.85rem;
     font-weight: 600;
 }
+
 .project-link { display: inline-block; margin-top: 1.5rem; color: #38bdf8; text-decoration: none; font-weight: 600; }
 .project-link:hover { text-decoration: underline; }
 
