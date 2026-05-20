@@ -3,74 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alex Campaña | Portafolio Profesional ASIX & Ciberseguridad</title>
+    <title>Alex Campaña | Portafolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="container">
-        <header>
-            <h1>Alex Campaña Salvador</h1>
-            <p class="subtitle">Graduado en ASIX & Especialista en Ciberseguridad</p>
-            <p class="intro">
-                Especializado en el diseño de entornos seguros, redes, administración de sistemas y automatización de procesos. Enfocado en la implementación de arquitecturas sólidas y el despliegue eficiente mediante microservicios.
-            </p>
-            <div class="links-contact">
-                <a href="https://www.linkedin.com/in/alex-camp%C3%B1a" target="_blank" rel="noopener">💼 Perfil de LinkedIn</a>
-                <a href="mailto:aalexcs.05@gmail.com">✉️ aalexcs.05@gmail.com</a>
+    <main class="wrapper">
+        <section id="sphere-interface" class="interface-container active-section">
+            <div class="spheres-grid">
+                
+                <div class="sphere-card" data-section="about" style="--accent: #38bdf8;">
+                    <div class="sphere"></div>
+                    <h3>Sobre Mí</h3>
+                </div>
+
+                <div class="sphere-card" data-section="experience" style="--accent: #a78bfa;">
+                    <div class="sphere"></div>
+                    <h3>Experiencia</h3>
+                </div>
+
+                <div class="sphere-card" data-section="studies" style="--accent: #f472b6;">
+                    <div class="sphere"></div>
+                    <h3>Estudios</h3>
+                </div>
+
+                <div class="sphere-card" data-section="projects" style="--accent: #fb923c;">
+                    <div class="sphere"></div>
+                    <h3>Proyectos</h3>
+                </div>
+
             </div>
-        </header>
+        </section>
 
-        <main>
-            <section id="sobre-mi">
-                <h2>🚀 Trayectoria y Estado Actual</h2>
-                <ul>
-                    <li><strong>Educación y Futuro:</strong> Técnico Superior en Administración de Sistemas Informáticos en Red (ASIX) por Vedruna Vall[cite: 27, 28]. En septiembre de 2026 iniciaré el Grado Universitario en Inteligencia Artificial para fusionar la gestión de infraestructuras con modelos predictivos[cite: 26].</li>
-                    <li><strong>Enfoque Técnico:</strong> Hardening de servidores basados en Linux, configuración y auditoría de redes Cisco, despliegue de entornos aislados con Docker y orquestación de tareas complejas[cite: 4, 14].</li>
-                    <li><strong>Experiencia del Sector:</strong> Sólida base en soporte técnico L1/L2, resolución proactiva de incidencias críticas, mantenimiento de infraestructura informática y docencia avanzada en programación y tecnologías STEAM[cite: 13, 14, 15, 17].</li>
-                </ul>
-            </section>
-
-            <section id="proyectos">
-                <h2>📂 Proyecto Destacado</h2>
-                <div class="card project-card">
-                    <h3>🛡️ AIIOC — API Platform para Indicadores de Compromiso</h3>
-                    <p>Una plataforma centralizada de backend diseñada específicamente para la ingesta, almacenamiento estructurado y análisis técnico de logs e indicadores de ciberseguridad (IoC).</p>
-                    
-                    <div class="tags-container">
-                        <span class="tag">Node.js (Express)</span>
-                        <span class="tag">MongoDB</span>
-                        <span class="tag">Docker & Compose</span>
-                        <span class="tag">Git Workflow</span>
-                    </div>
-                    
-                    <a class="btn" href="https://github.com/aalexcs05/aiioc-api" target="_blank" rel="noopener">Revisar Código Fuente en GitHub</a>
-                </div>
-            </section>
-
-            <section id="habilidades">
-                <h2>🛠️ Core de Competencias</h2>
-                <div class="grid">
-                    <div class="card">
-                        <h3>Sistemas y Arquitectura</h3>
-                        <p>Administración y securización de sistemas Linux (Debian, Ubuntu, Kali), virtualización avanzada, y contenedorización completa utilizando entornos Docker[cite: 4, 14].</p>
-                    </div>
-                    <div class="card">
-                        <h3>Redes y Automatización</h3>
-                        <p>Despliegue y routing sobre hardware Cisco (Switches/Routers), scripting operativo en Bash y Python, y desarrollo de flujos automatizados complejos mediante n8n[cite: 14, 17].</p>
-                    </div>
-                    <div class="card">
-                        <h3>Desarrollo y Datos</h3>
-                        <p>Diseño de lógica de negocio del lado del servidor con Node.js, almacenamiento NoSQL estructurado en MongoDB y configuración orientada al rendimiento.</p>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <footer>
-            <p>&copy; 2026 Alex Campaña Salvador. Portafolio técnico optimizado y alojado en GitHub Pages.</p>
-        </footer>
-    </div>
+        <section id="details-content" class="details-container">
+            <button class="back-btn">← Volver</button>
+            <div id="content-area"></div>
+        </section>
+    </main>
 
     <script src="script.js"></script>
 </body>
