@@ -1,12 +1,12 @@
 # ¡Hola! Soy Alex Campaña 👋
 
-Especialista en ASIX y Ciberseguridad con enfoque en Inteligencia Artificial y Automatización. Me apasiona el diseño de infraestructuras seguras, la optimización de entornos tecnológicos y el despliegue de soluciones inteligentes.
+Graduado en ASIX y Ciberseguridad con enfoque en Inteligencia Artificial y Automatización. Me apasiona el diseño de infraestructuras seguras, la optimización de entornos tecnológicos y el despliegue de soluciones inteligentes.
 
 ---
 
 ## 🚀 Sobre mí
 
-* 🎓 **Formación:** Estudiante de segundo año del Grado Superior en Administración de Sistemas Informáticos en Red (ASIX) en Vedruna Vall, con planes de especialización inmediata en Inteligencia Artificial.
+* 🎓 **Formación:** Recién graduado del Grado Superior en Administración de Sistemas Informáticos en Red (ASIX) en Vedruna Vall. En septiembre de 2026 inicio mi Grado Universitario enfocado en Inteligencia Artificial.
 * 💻 **Pasión técnica:** Administración de sistemas, seguridad en redes, contenedorización con Docker y hardening de servidores Linux.
 * 🛠️ **Experiencia:** Trayectoria en soporte técnico L1/L2, gestión de redes e infraestructura, y docencia en programación y robótica (STEAM).
 
