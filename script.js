@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
     
-    // Base de datos de la información del perfil técnico
     const infoData = {
         about: {
             title: "Sobre Mí",
